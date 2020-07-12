@@ -563,24 +563,30 @@ a {
 .flex-element:nth-child(3n) {
   margin-right: 0;
 }
-.texnokryak-overlay {
+.texnokryak {
+  width: 370px;
+}
+.card {
+  display: block;
   position: relative;
-  overflow: hidden;
+  height: 294px;
 }
 
-.texnokryak-overlay::after {
-  display: inline-block;
-  content: "";
-  width: 100%;
-  background-color: rgba(94, 176, 243, 0.9);
+.texnokryak-overlay {
   position: absolute;
-  top: 0;
+  overflow: hidden;
+  bottom: 0;
   left: 0;
+  height: 0;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
   opacity: 0;
-  transform: translateY(-100%);
+  background-color: rgba(33, 150, 243, 0.9);
   transition: all 250ms var(--animation-timing-function);
 }
-.texnokryak-overlay:hover::after {
+.card:hover.texnokryak-overlay {
+  height: 294px;
   opacity: 1;
-  transform: translateY(0);
+  transition: all 250ms var(--animation-timing-function);
 }
