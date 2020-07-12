@@ -584,8 +584,12 @@ a {
   opacity: 0;
   background-color: rgba(33, 150, 243, 0.9);
   transition: all 250ms var(--animation-timing-function);
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
 }
-.card:hover.texnokryak-overlay {
+.card:hover .texnokryak-overlay {
   height: 294px;
   opacity: 1;
   transition: all 250ms var(--animation-timing-function);
